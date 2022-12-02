@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E_Goods</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <!--회색 배경-->
+    <img src="../img/backback.png" alt="main_background" id="main_back">
+    <div class="school"><img src="../img/school.png" alt="" id="school"></div>
+    <div class="new_back"></div>
+    <!--상단바-->
+    <nav class="menu_bar">
+        <a href="./index.html"><img src="../img/logo.png" alt="logo" id="logo"></a>
+        <ul class="menu_list">
+            <a href="./login.html"class="login"><li>Login</li></a>
+            <a href="./wish_list.html"><li><img src="../img/heart.png" alt=""></li></a>
+            <a href="./shopping_cart.html"><li><img src="../img/cart.png" alt=""></li></a>
+            <button id="pop_btn"><li><img src="../img/menu.png" alt=""></li></button>
+        </ul>
+    </nav>
+    <div id="popup">
+            <a href="./form_input.html"><h2>공구 신청하기</h2></a>
+            <hr>
+            <a href="./form_list.html"><h2>진행중인 공구</h2></a>
+            <hr>
+        <h2>종료된 공구</h2>
+        <ul>
+            <a href="./clothes_list.html"><li>의류</li></a>
+            <br>
+            <a href="./accessory_list.html"><li>악세서리</li></a>
+        </ul>
+        <hr>
+        <a href="./about_us.html"><h2>About Us</h2></a>
+    </div>
+    <!--메인부분-->
+    <section class="main">
+        <h1 class="main_copy"><span><img src="../img/flower.png" alt="flower" id="flower"></span>EWHA <br> Group Buying <br> Store </h1>
+        <button type="button" onClick="location.href='./login.html';" class="animate__animated animate__pulse animate__infinite" id="shop_btn">shop now</button>
+    </section>
+    <img src="../img/arrow.png" alt="" id="arrow">
+    <!--대표 굿즈들-->
+    <section class="items">
+        <h2>Best Items</h2>
+        <table>
+            <tr>
+                <td>
+                    <div class="item">
+                        <img src="../img/dog.png" alt="" class="itemImage">
+                        <img class="hoverCircle" src="../img/circle.png">
+                    </div>
+                    <div id="itemName">강아지 학사모 케이프</div>
+                    <div id="itemPrice">10000원</div>
+                </td>
+                <td id="noPad">
+                    <img src="../img/shoes1.png" alt="">
+                </td>
+                <td id="noPad">
+                    <img src="../img/shoes2.png" alt="">
+                </td>
+                <td>
+                    <div class="item">
+                        <img src="../img/jacket.png" alt="" class="itemImage">
+                        <img class="hoverCircle" src="../img/circle.png">
+                    </div>
+                    <div id="itemName">이화 야구 점퍼</div>
+                    <div id="itemPrice">59000원</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="item">
+                        <img src="../img/cardigan.png" alt="" class="itemImage">
+                        <img class="hoverCircle" src="../img/circle.png">
+                    </div>
+                    <div id="itemName">이화 니트 가디건</div>
+                    <div id="itemPrice">52000원</div>
+                </td>
+                <td>
+                    <h2>NEW! <br> 이화 목도리 <br> 28000원</h2>
+                </td>
+                <td id="noPad">  
+                    <img src="../img/scarf.png" alt="">
+                </td>
+                <td>
+                    <div class="item">
+                        <img src="../img/shirts.png" alt="" class="itemImage">
+                        <img class="hoverCircle" src="../img/circle.png">
+                    </div>
+                    <div id="itemName">1886 반팔티</div>
+                    <div id="itemPrice">14000원</div>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!--흘러가는 바-->
+    <div class="animated-title">
+        <div class="track">
+            <div class="slide_bar">
+                &nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886  &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886  &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886  &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886  &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886  &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886 &nbsp;&nbsp;&nbsp;1886  &nbsp;&nbsp;&nbsp;1886 
+        </div>
+    </div>
+    <section class="sub_part">
+        <h2>Looking for more items?</h2>
+        <button type="button" onClick="location.href='./login.html';">shop now</button>
+    </section>
+    <footer>
+        <a href="./about_us.html"><h3>@About us</h3></a>
+        <img src="" alt=""><img src="" alt=""><img src="" alt="">
+    </footer>
+  
+    <script src="../JS/app.js"></script>
+</body>
+</html>

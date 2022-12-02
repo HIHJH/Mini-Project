@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/form_input.css">
+</head>
+<body>
+     <!--상단바-->
+    <nav class="menu_bar">
+        <a href="./index.html"><img src="../img/logo_white.png" alt="logo" id="logo"></a>
+        <ul class="menu_list">
+            <span class="center">
+                <a href="./form_input.html">
+                    <li>공구신청</li>
+                </a>
+                <a href="./form_list.html">
+                    <li>진행중인 공구</li>
+                </a>
+                <span>종료된 공구</span>
+                <div class="seperate"></div>
+                <a href="./clothes_list.html">
+                    <li>의류</li>
+                </a>
+                <a href="./accessory_list.html">
+                    <li>악세서리</li>
+                </a>
+            </span>
+        </ul>
+        <a href="./wish_list.html" id="icons"><li><img src="../img/heart.png" alt=""></li></a>
+        <a href="./shopping_cart.html" id="icons"><li><img src="../img/cart.png" alt=""></li></a>
+    </nav>
+    <div id="bar"></div>
+    <!--입력폼-->
+    <div class="top">
+        <h2>공동구매를 원하는 상품이 있나요?<br>직접 수요조사를 진행해보세요! <img src="../img/cup.png" alt="" id="cup">
+        <img src="../img/paper.png" alt="" id="paper"></h2>
+        <p>최소 수요인원 달성시 공동구매가 확정됩니다.</p>
+    </div>
+    <form action="" class="form">
+        <div class="line"></div>
+        <div class="middle">
+            <h3>게시글 제목</h3>
+            <input type="text" id="title" required>
+            <h3>상품 종류</h3>
+            <select name="goods_category" id="category" required>
+                <option value="">선택</option>
+                <optgroup label="의류">
+                    <option value="">과잠</option>
+                    <option value="">후드티</option>
+                    <option value="">후리스</option>
+                    <option value="">아노락</option>
+                    <option value="">바람막이</option>
+                    <option value="">롱패딩</option>
+                </optgroup>
+                <optgroup label="악세서리">
+                    <option value="">모자</option>
+                    <option value="">목도리</option>
+                </optgroup>
+            </select>
+            <div>
+                <div id="a">
+                    <h3>상품명</h3>
+                    <input type="text" id="name" required>
+                </div>
+                <div id="b">
+                    <h3>예상 가격</h3>
+                    <input type="text" id="price" required>
+                    <span>원</span>
+                </div>
+            </div>
+            <div>
+                <div id="c">
+                    <h3>최소 수요</h3>
+                    <input type="number" id="num" required>
+                    <span>명</span>
+                </div>
+                <div id="d">
+                    <h3>수요조사 기간</h3>
+                    <input type="date" id="date" required>
+                    <span> ~ </span>
+                    <input type="date" id="date" required>
+                </div>
+            </div>
+            <div id="e">
+                <h3>시안 종류 (선택)</h3>
+                <input type="text" id="choice" placeholder="ex. 1.남색">
+                <img src="../img/plus.png" alt="">
+            </div>
+            <div id="f">
+                <h3>상세내용</h3>
+                <form action="">
+                 <p><textarea name="" id="description" cols="30" rows="10"></textarea></p>
+                </form>
+                 <div class="filebox">
+                     <label for="upload_file">사진 업로드</label>
+                     <input type="file" id="upload_file">
+                 </div>
+            </div>
+            <button type="submit" id="submit"  onClick="location.href='./form_list.html'">폼 만들기</button>
+        </div>
+    </form>
+    <script src="../JS/form_input.js"></script>
+</body>
+</html>

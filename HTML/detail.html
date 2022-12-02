@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/detail.css">
+</head>
+<body>
+     <!--상단바-->
+     <nav class="menu_bar">
+        <a href="./index.html"><img src="../img/logo_white.png" alt="logo" id="logo"></a>
+        <ul class="menu_list">
+            <span class="center">
+                <a href="./form_input.html">
+                    <li>공구신청</li>
+                </a>
+                <a href="./form_list.html">
+                    <li>진행중인 공구</li>
+                </a>
+                <span>종료된 공구</span>
+                <div class="seperate"></div>
+                <a href="./clothes_list.html">
+                    <li>의류</li>
+                </a>
+                <a href="./accessory_list.html">
+                    <li>악세서리</li>
+                </a>
+            </span>
+        </ul>
+        <a href="./wish_list.html" id="icons"><li><img src="../img/heart.png" alt=""></li></a>
+        <a href="./shopping_cart.html" id="icons"><li><img src="../img/cart.png" alt=""></li></a>
+    </nav>
+    <div id="bar"></div>
+    <!--description-->
+    <section id="info">
+        <h4>의류 &nbsp;&nbsp;|&nbsp;&nbsp;후드티</h4>
+        <div id="info_list">
+            <img src="../img/hoody.png" alt="" id="img">
+            <ul>
+                <li id="name">1886 기모 후드티</li>
+                <li id="price">37500원</li>
+                <li id="duration"><span>수요조사 기간</span> &nbsp; <span id="dur">2022.11.15 ~ 2022.11.30</span></li>
+                <li id="minimum"><span>최소 수요 인원</span> &nbsp;<span id="person">30명</span></li>
+                <li id="choice">선택사항</li>
+                <li><input type="checkbox" id="check">1.네이비 <input type="checkbox" id="check">2.그레이</li>
+                <button type="submit" id="participation" onclick="location.href='./shopping_cart.html'">참여하기</button>
+            </ul>
+        </div>
+        <!--detail-->
+        <h3>상세내용</h3>
+        <hr id="short_bar">
+        <p>
+            일단 네이비와 그레이 색상으로 진행하고, 최소 수요 채우지 못했을 때 해당 색상만 펑합니다.<br>
+            소매와 허리 부분 시보리에 스트라이프는 빠질 예정입니다. <br>
+            업체 최고급 원단 + 기모로 진행합니다. 헤비웨이트 쭈리 옵션이 너무 오버스펙이라 업체와 상담 후 수정했습니다.<br>
+            100벌 이상 주문 시 단가는 더욱 내려갑니다!
+        </p>
+        <!--comment-->
+        <h3>댓글</h3>
+        <hr id="short_bar">
+        <div id="comment">
+            <img src="../img/profile.png" alt="" id="profile">
+            <p><textarea name="" id="block" cols="30" rows="10" placeholder="댓글을 입력해주세요."></textarea></p> 
+            <button id="submit">등록</button>
+        </div>
+    </section>
+    <script href="../JS/detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/sign_up.css">
+</head>
+<body>
+    
+    <div class="img">
+        <div class="nav">
+            <!--nav-->
+            <nav class="menu_bar">
+                <a href="./index.html"><img src="../img/logo.png" alt="logo" id="logo"></a>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="signUpInput">
+                <div id="signUp">Sign Up</div>
+                <div id="form">
+                <div id="name">Id</div>
+                <input type="text" name="id" id="id">
+                <span id="ex">4~12자 영문 대소문자와 숫자</span>
+                <div id="name">Password</div>
+                <input type="password" name="pw" id="pw">
+                <span id="ex">4~12자 영문 대소문자와 숫자</span>
+                <div id="name">Repeat password</div>
+                <input type="password" name="re_pw" id="re_pw"><br>
+                <div id="name">Email Address</div>
+                <input type="email" name="email" id="email"><br>
+                <button type="submit"id="signbutton" onclick="popup()">가입하기</button><br>
+                </div>
+            </div>
+        </div>
+        <div class="img-cover"></div>
+        <div id="pop" style="display: none;">
+            <div id="popbar"><img src="../img/x_icon.png" onclick="delete_box()"></div>
+            <div id="cong"><span name="id">00</span> 님의 가입을 축하합니다!</div>
+            <div id="loginButton"><a href="./login.html">로그인하기</a></div>
+        </div>
+    </div>
+
+    <script src="../JS/sign_up.js"></script>
+</body>
+</html>

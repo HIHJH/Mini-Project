@@ -1,0 +1,78 @@
+/* 상단바 */
+#logo{
+    margin-top: 15px;
+}
+
+.menu_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 20px;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.login>li{
+    color: #00462A;
+    font-size: 20px;
+}
+
+#pop_btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#popup{
+    display: none;
+    background-color: #00462A;
+    width: 200px;
+    height: 350px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    right: 0%;
+    border-radius: 10px;
+}
+
+#popup>a>h2{
+    color: #D9D9D9;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+#popup>h2{
+    color: #D9D9D9;
+    font-size: 20px;
+}
+
+#popup>ul>a>li{
+    color: #D9D9D9;
+}
+
+hr{
+    width: 200px;
+}
+
+#middle{
+text-align: center;
+margin-top: 200px;
+}
+
+#middle>h2{
+    font-weight: 400;
+    font-size: 25px;
+}
